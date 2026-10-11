@@ -123,11 +123,11 @@ rtk git commit -m "docs: add open-source project guidance"
 
 Trigger on `push` and `pull_request`. Use `ubuntu-latest`, set `permissions: contents: read`, check out with `actions/checkout@v7`, and configure .NET with `actions/setup-dotnet@v6` using `global-json-file: global.json`. Run `dotnet restore AgentHarness.sln` followed by `dotnet build AgentHarness.sln --configuration Release --no-restore`.
 
-- [ ] **Step 2: Verify locally and review the workflow**
+- [x] **Step 2: Verify locally and review the workflow**
 
 Run `rtk dotnet build AgentHarness.sln --configuration Release`. Confirm the workflow uses the same pinned SDK and solution as the README. CI will provide the remote run evidence after the user pushes the branch.
 
-- [ ] **Step 3: Commit the workflow**
+- [x] **Step 3: Commit the workflow**
 
 The user can commit with:
 
